@@ -11,6 +11,7 @@
 		2DE2FB9C1AC48F4E00D6B633 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DE2FB9B1AC48F4E00D6B633 /* Images.xcassets */; };
 		2DE2FB9F1AC48F4E00D6B633 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DE2FB9D1AC48F4E00D6B633 /* MainMenu.xib */; };
 		2DE2FBAB1AC48F4F00D6B633 /* Stopwatch_XibTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE2FBAA1AC48F4F00D6B633 /* Stopwatch_XibTests.swift */; };
+		2DE2FBB51AC48F7200D6B633 /* Stopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE2FBB41AC48F7200D6B633 /* Stopwatch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +33,7 @@
 		2DE2FBA41AC48F4F00D6B633 /* Stopwatch XibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Stopwatch XibTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DE2FBA91AC48F4F00D6B633 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2DE2FBAA1AC48F4F00D6B633 /* Stopwatch_XibTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stopwatch_XibTests.swift; sourceTree = "<group>"; };
+		2DE2FBB41AC48F7200D6B633 /* Stopwatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Stopwatch.swift; path = ../Stopwatch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				2DE2FB961AC48F4E00D6B633 /* Stopwatch Xib */,
-				2DE2FBA71AC48F4F00D6B633 /* Stopwatch XibTests */,
+				2DE2FBA71AC48F4F00D6B633 /* Stopwatch Xib Tests */,
 				2DE2FB951AC48F4E00D6B633 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				2DE2FB991AC48F4E00D6B633 /* AppDelegate.swift */,
+				2DE2FBB41AC48F7200D6B633 /* Stopwatch.swift */,
 				2DE2FB9B1AC48F4E00D6B633 /* Images.xcassets */,
 				2DE2FB9D1AC48F4E00D6B633 /* MainMenu.xib */,
 				2DE2FB971AC48F4E00D6B633 /* Supporting Files */,
@@ -89,12 +92,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		2DE2FBA71AC48F4F00D6B633 /* Stopwatch XibTests */ = {
+		2DE2FBA71AC48F4F00D6B633 /* Stopwatch Xib Tests */ = {
 			isa = PBXGroup;
 			children = (
 				2DE2FBAA1AC48F4F00D6B633 /* Stopwatch_XibTests.swift */,
 				2DE2FBA81AC48F4F00D6B633 /* Supporting Files */,
 			);
+			name = "Stopwatch Xib Tests";
 			path = "Stopwatch XibTests";
 			sourceTree = "<group>";
 		};
@@ -150,6 +154,7 @@
 		2DE2FB8C1AC48F4E00D6B633 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0620;
 				ORGANIZATIONNAME = ERHS;
 				TargetAttributes = {
@@ -206,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DE2FB9A1AC48F4E00D6B633 /* AppDelegate.swift in Sources */,
+				2DE2FBB51AC48F7200D6B633 /* Stopwatch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,7 +329,8 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "Stopwatch Xib/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "Stopwatch Xib";
 			};
 			name = Debug;
 		};
@@ -334,7 +341,8 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "Stopwatch Xib/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "Stopwatch Xib";
 			};
 			name = Release;
 		};
@@ -353,7 +361,7 @@
 				);
 				INFOPLIST_FILE = "Stopwatch XibTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Stopwatch XibTests";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stopwatch Xib.app/Contents/MacOS/Stopwatch Xib";
 			};
 			name = Debug;
@@ -369,7 +377,7 @@
 				);
 				INFOPLIST_FILE = "Stopwatch XibTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Stopwatch XibTests";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stopwatch Xib.app/Contents/MacOS/Stopwatch Xib";
 			};
 			name = Release;
@@ -393,6 +401,7 @@
 				2DE2FBB01AC48F4F00D6B633 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2DE2FBB11AC48F4F00D6B633 /* Build configuration list for PBXNativeTarget "Stopwatch XibTests" */ = {
 			isa = XCConfigurationList;
@@ -401,6 +410,7 @@
 				2DE2FBB31AC48F4F00D6B633 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
